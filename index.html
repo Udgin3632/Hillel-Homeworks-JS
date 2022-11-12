@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Git Hub Ptofile</h1>
+
+    <form id="userInfoform">
+        <input value="Udgin3632" type="text" id="nameInput"  placeholder="Git Username">
+        <button type="submit" id="submitButton">Find</button>
+    </form>
+
+    <div id="userInfoContainer"></div>
+
+    <script type="text/template" id="userInfoTemplate">
+        <div>
+            <img src="{{avatar}}">
+            <p>{{repos}}</p>
+            <p>{{followers}}</p>
+            <p>{{following}}</p>
+        </div>
+
+    </script>
 </body>
 </html>
